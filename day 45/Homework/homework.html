@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* შეცვალე row-reverse ან column */
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgray;
+            padding: 20px;
+            height: 100vh;
+        }
+        .item {
+            flex: 1; /* ყველა ელემენტი ერთნაირი სიგანის */
+            background-color: lightblue;
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .item:nth-child(2) {
+            flex: 2; /* მეორე ელემენტი ორჯერ უფრო დიდი */
+        }
+        .item:nth-child(3) {
+            align-self: flex-end; /* მესამე ელემენტი ქვემოთ */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>

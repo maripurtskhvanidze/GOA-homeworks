@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Dimensional Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-areas: 
+                "header header"
+                "menu content"
+                "footer footer";
+            height: 100vh;
+        }
+        .header {
+            grid-area: header;
+            background: cyan;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu {
+            grid-area: menu;
+            background: red;
+            padding: 20px;
+            color: white;
+        }
+        .content {
+            grid-area: content;
+            background: orange;
+            padding: 20px;
+        }
+        .footer {
+            grid-area: footer;
+            background: cyan;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

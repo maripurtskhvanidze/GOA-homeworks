@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center-div {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            background: lightgray;
+            padding: 10px;
+        }
+
+        .image-right {
+            display: block;
+            margin-left: auto;
+        }
+
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            background: lightblue;
+            padding: 10px;
+        }
+        .button-container button {
+            margin-top: auto;
+        }
+
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+        }
+        .image-container .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .move-up {
+            position: relative;
+            top: -10px;
+            background: lightcoral;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        .container .box {
+            flex: 1;
+            padding: 10px;
+            background: lightgreen;
+        }
+
+        .float-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .space-between {
+            display: flex;
+            justify-content: space-between;
+            background: lightgoldenrodyellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sticky-header">Real Madrid</div>
+
+    <div class="center-div">Real Madrid</div>
+
+    <img src="download (1).jpg" class="image-right" alt="Image">
+
+    <div class="button-container">
+        <p>!HALA MADRID!</p>
+        <button>Press if you like Real Madrid</button>
+    </div>
+
+    <div class="image-container">
+        <img src="download.jpg" alt="Image">
+        <div class="text"></div>
+    </div>
+
+    <div class="move-up">Real Madrid</div>
+
+    <div class="container">
+        <div class="box">Real Madrid</div>
+        <div class="box">Real Madrid</div>
+    </div>
+
+    <p><img src="download (1).jpg" class="float-left" alt="Image"> Real Madrid</p>
+
+    <div class="space-between">
+        <div>Real Madrid</div>
+        <div>Real Madrid</div>
+    </div>
+
+    <div class="fixed-footer">Real Madrid</div>
+
+</body>
+</html>

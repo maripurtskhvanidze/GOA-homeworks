@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Animations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: darkblue;
+        }
+
+        .text {
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .text:hover {
+            color: purple;
+        }
+        .border-box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            transition: border-width 0.3s;
+        }
+        .border-box:hover {
+            border-width: 5px;
+        }
+        .press-button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .press-button:active {
+            transform: scale(0.95);
+        }
+        .opacity-box {
+            width: 100px;
+            height: 100px;
+            background: gray;
+            transition: opacity 0.3s;
+        }
+        .opacity-box:hover {
+            opacity: 0.5;
+        }
+        .padding-box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transition: padding 0.3s;
+        }
+        .padding-box:hover {
+            padding: 20px;
+        }
+
+        .rotate-icon:hover {
+            transform: rotate(10deg);
+        }
+        .shadow-card {
+            width: 150px;
+            height: 100px;
+            background: white;
+            box-shadow: 2px 2px 5px gray;
+            transition: box-shadow 0.3s;
+        }
+        .shadow-card:hover {
+            box-shadow: 5px 5px 15px black;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Button</button>
+    <p class="text">Paragraph</p>
+    <div class="border-box"></div>
+    <button class="press-button">Second Button</button>
+    <div class="opacity-box"></div>
+    <div class="padding-box"></div>
+    <div class="shadow-card"></div>
+</body>
+</html>
