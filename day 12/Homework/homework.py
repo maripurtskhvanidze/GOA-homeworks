@@ -1,0 +1,10 @@
+print(True or False)
+
+print(3 > 5 and 2 < 5)
+print(10 != 12 or 12 <= 12)
+print(5 == 5 and 4 > 2)
+print(7 < 4 or 5 > 6)
+print(11 >= 11 and 7 >= 7)
+print(13 != 44 or 14 != 65)
+print(7 <= 8 and 8 >= 7)
+print(6 < 5 or 4 > 2)
