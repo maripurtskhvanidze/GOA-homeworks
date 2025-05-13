@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex Homework</title>
+<style>
+    .parent {
+    display: flex;
+      flex-direction: row; /* Initially horizontal */
+    width: 100%;
+    }
+
+    .child {
+      flex: 1; /* Each child div will have equal width */
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid #000;
+    text-align: center;
+    }
+
+    /* When the screen width is 800px or less */
+    @media (max-width: 800px) {
+    .parent {
+        flex-direction: column; /* Vertical direction */
+    }
+    }
+</style>
+</head>
+<body>
+
+<div class="parent">
+<div class="child">Child 1</div>
+<div class="child">Child 2</div>
+<div class="child">Child 3</div>
+</div>
+
+</body>
+</html>

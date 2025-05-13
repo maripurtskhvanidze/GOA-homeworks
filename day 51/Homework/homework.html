@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .ball {
+            background-color: rgb(39, 46, 46);
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        #main-div {
+            width: 150px;
+            height: 100px;
+            background-color: aqua;
+            animation-name: animation1;
+            border-radius: 50%;
+        }
+
+        @keyframes animation1 {
+            from {
+                transform: scale(1);
+            }
+            20% {
+                transform: translate(100px, -150px) scale(0.6);
+            }
+            55% {
+                transform: translate(250px, -20px) scale(2);
+            }
+            80% {
+                transform: translate(400px, 150px) scale(1.2);
+            }
+            to {
+                transform: translate(550px, -10px) scale(3);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
