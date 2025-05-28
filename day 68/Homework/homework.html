@@ -1,0 +1,55 @@
+<h3>positive or negative number</h3>
+<input type="number" id="checkNumber" placeholder="Enter a number">
+<button onclick="checkNumber()">Check</button>
+<p id="checkResult"></p>
+
+<h3>voting eligibility</h3>
+<input type="number" id="age" placeholder="Enter your age">
+<button onclick="checkAge()">Check</button>
+<p id="ageResult"></p>
+
+<h3>compare two numbers</h3>
+<input type="number" id="numA" placeholder="Enter first number">
+<input type="number" id="numB" placeholder="Enter second number">
+<button onclick="compareTwo()">Compare</button>
+<p id="compareResult"></p>
+
+<script>
+function checkNumber() {
+    let num = Number(document.getElementById("checkNumber").value);
+    let result = "";
+    if (num > 0) {
+    result = "The number is positive.";
+    } else if (num < 0) {
+    result = "The number is negative.";
+    } else {
+    result = "The number is zero.";
+    }
+    document.getElementById("checkResult").innerText = result;
+}
+
+function checkAge() {
+    let age = Number(document.getElementById("age").value);
+    let result = "";
+    if (age >= 18) {
+    result = "You can vote!";
+    } else {
+    result = "You are not eligible to vote.";
+    }
+    document.getElementById("ageResult").innerText = result;
+}
+
+function compareTwo() {
+    let num1 = Number(document.getElementById("numA").value);
+    let num2 = Number(document.getElementById("numB").value);
+    let result = "";
+    if (num1 > num2) {
+    result = num1 + " is greater.";
+    } else if (num2 > num1) {
+    result = num2 + " is greater.";
+    } else {
+    result = "Both numbers are equal.";
+    }
+    document.getElementById("compareResult").innerText = result;
+}
+</script>
