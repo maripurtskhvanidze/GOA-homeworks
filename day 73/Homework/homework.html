@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Tasks</title>
+</head>
+<body>
+
+<div id="myDiv"></div>
+
+<script>
+    const p = document.createElement("p");
+    document.body.appendChild(p);
+
+    const h1 = document.createElement("h1");
+    h1.textContent = "This is a heading";
+    document.getElementById("myDiv").appendChild(h1);
+
+    const img = document.createElement("img");
+    img.src = "download.png";
+    document.body.appendChild(img);
+
+    const button = document.createElement("button");
+    button.textContent = "Click me";
+    document.body.appendChild(button);
+
+    const ul = document.createElement("ul");
+    const li1 = document.createElement("li");
+    li1.textContent = "First item";
+    const li2 = document.createElement("li");
+    li2.textContent = "Second item";
+    const li3 = document.createElement("li");
+    li3.textContent = "Third item";
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+    document.body.appendChild(ul);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment</title>
+</head>
+<body>
+
+<button id="stopBtn">Stop</button>
+
+<script>
+    const intervalId = setInterval(function() {
+    console.log("Mark Peterburg");
+    }, 10000);
+
+    document.getElementById("stopBtn").onclick = function() {
+    clearInterval(intervalId);
+    };
+</script>
+
+</body>
+</html>

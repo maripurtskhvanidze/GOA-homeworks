@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interval Tasks</title>
+</head>
+<body>
+
+<script>
+    let count1 = 1;
+    const interval1 = setInterval(function() {
+    console.log(count1);
+    count1++;
+    if (count1 > 5) clearInterval(interval1);
+    }, 1000);
+
+    let count2 = 0;
+    const interval2 = setInterval(function() {
+    console.log("Message every 2 seconds");
+    count2 += 2;
+    if (count2 >= 10) clearInterval(interval2);
+    }, 2000);
+
+    let colorCount = 0;
+    const colors = ["lightblue", "lightgreen", "lightyellow", "lightpink", "lightgray"];
+    const interval3 = setInterval(function() {
+    document.body.style.backgroundColor = colors[colorCount];
+    colorCount++;
+    if (colorCount === 5) clearInterval(interval3);
+    }, 3000);
+
+    let timeCount = 0;
+    const interval4 = setInterval(function() {
+    console.log(new Date().toLocaleTimeString());
+    timeCount++;
+    if (timeCount >= 15) clearInterval(interval4);
+    }, 1000);
+
+    let timer = 0;
+    const interval5 = setInterval(function() {
+    console.log("Timer: " + timer + "s");
+    timer++;
+    if (timer > 10) clearInterval(interval5);
+    }, 1000);
+</script>
+
+</body>
+</html>
